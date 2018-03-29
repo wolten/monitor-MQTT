@@ -7,7 +7,7 @@ var http = require('http');
 // MONGODB
 var MongoClient = require('mongodb').MongoClient;
 var myCollection;
-var db = MongoClient.connect('mongodb://woltenX:bypass9m3@ds117336.mlab.com:17336/bd_codepost', function (err, db) {
+var db = MongoClient.connect('mongodb://user:pass@ds117336.mlab.com:17336/bd_codepost', function (err, db) {
   if (err)
     throw err;
   console.log(chalk.green('MongoDB: ') + " ONLINE");
